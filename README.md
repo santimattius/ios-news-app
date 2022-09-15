@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/santimattius/ios-news-app/branch/main/graph/badge.svg?token=VZWV2CU06E)](https://codecov.io/gh/santimattius/ios-news-app) [![Quality checks](https://github.com/santimattius/ios-news-app/actions/workflows/main.yml/badge.svg)](https://github.com/santimattius/ios-news-app/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/santimattius/ios-news-app/branch/main/graph/badge.svg?token=LUP0NZmRXG)](https://codecov.io/gh/santimattius/ios-news-app) [![Quality checks](https://github.com/santimattius/ios-news-app/actions/workflows/main.yml/badge.svg)](https://github.com/santimattius/ios-news-app/actions/workflows/main.yml)
 
 # iOS News App
 This is a template to build an iOS application applying good practices and using a clean architecture, you will see that the code is super decoupled with external frameworks and even with the same iOS framework, this will help you to model your domain purely in Swift without generating external dependencies.
