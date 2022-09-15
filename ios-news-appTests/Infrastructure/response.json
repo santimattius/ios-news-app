@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 29829,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "JetBlue Airline boss over-hiring to beat staff exodus",
+            "description": "Low-fare carrier JetBlue said it is a necessary policy when recruiting, as the industry re-starts.",
+            "url": "https://www.bbc.co.uk/news/business-62408122",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/EEF3/production/_126217116_mediaitem126217115.jpg",
+            "publishedAt": "2022-08-08T01:54:29Z",
+            "content": "The boss of US low-fare carrier JetBlue has said it is necessary to over-hire staff because of the rate at which people are still leaving the industry.\r\nRobin Hayes was speaking as thousands of trave… [+3219 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Commonwealth Games: India beat England in Twenty20 semi-final",
+            "description": "England's hopes of winning Twenty20 gold are over after they fall to a four-run defeat by India in the semi-finals of the Commonwealth Games.",
+            "url": "https://www.bbc.co.uk/sport/commonwealth-games/62448578",
+            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/11787/production/_124395517_bbcbreakingnewsgraphic.jpg",
+            "publishedAt": "2022-08-06T13:15:33Z",
+            "content": "<table>\r\n<tr><td>Twenty20 semi-final: Edgbaston</td></tr><tr><td>India 164-5 (20 overs) beat England 160-6 (20 overs) by four runs</td></tr><tr><td>Scorecard</td></tr>\r\n</table>England's hopes of win… [+583 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Commonwealth Games: England's James Willstrop and Declan James win men's doubles squash gold",
+            "description": "James Willstrop and Declan James beat fellow England pair Daryl Selby and Adrian Waller in men's squash doubles final.",
+            "url": "https://www.bbc.co.uk/sport/commonwealth-games/62463016",
+            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/16B7E/production/_126245039_0a4ed5948a7d211b72fbc526395c80e40d0a9665.jpg",
+            "publishedAt": "2022-08-08T13:27:01Z",
+            "content": "James Willstrop and Declan James added a Commonwealth Games gold to the world title they won in April\r\nJames Willstrop and Declan James beat fellow England pair Daryl Selby and Adrian Waller to win C… [+422 chars]"
+        }
+    ]
+}

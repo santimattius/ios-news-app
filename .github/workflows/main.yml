@@ -1,0 +1,52 @@
+name: Quality checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '.swiftlint.yml'
+      - '**/*.swift'
+
+jobs:
+  build:
+    name: Build and analyse
+    runs-on: macos-12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Force Xcode 14
+        run: sudo xcode-select -switch /Applications/Xcode_14.0.app
+      - run: |
+          bundle config path vendor/bundle
+          bundle install
+      - name: Build and Test
+        run:  xcodebuild test -project ios-news-app.xcodeproj -scheme ios-news-app -destination 'platform=iOS Simulator,name=iPhone 13,OS=latest' -allowProvisioningUpdates build test
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: get_branch
+      - run: bundle exec slather
+        env:
+          GIT_BRANCH: ${{ steps.get_branch.outputs.branch }}
+          CI_PULL_REQUEST: ${{ github.event.number }}
+          COVERAGE_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Test Report
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./test-reports/cobertura.xml
+          flags: unittests 
+          name: pull-request
+          fail_ci_if_error: true
+          verbose: true
+  SwiftLint:
+    name: SwiftLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Only files changed in the PR
+        uses: norio-nomura/action-swiftlint@3.2.1
+        env:
+          DIFF_BASE: ${{ github.base_ref }}

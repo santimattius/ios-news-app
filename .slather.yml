@@ -1,0 +1,9 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+xcodeproj: ./ios-news-app.xcodeproj
+scheme: ios-news-app
+output_directory: ./test-reports
+ignore:
+  - "DI/*"
+  - "Core/*"
