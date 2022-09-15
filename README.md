@@ -19,6 +19,9 @@ This is a template to build an iOS application applying good practices and using
   <img src="https://github.com/santimattius/ios-arch-template/blob/main/screenshots/project-structure.png?raw=true" alt="Project structure"/>
 </p>
 
+## Setup apiKey
+Add in the [Credentials.plist](https://github.com/santimattius/ios-news-app/blob/main/ios-news-app/Credentials.plist) file the following variable apiKey with the key obtained in the [api portal](https://newsapi.org/).
+
 ## Slather
 
 Execute `bundle install` and run application tests.
